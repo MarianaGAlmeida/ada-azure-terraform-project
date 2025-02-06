@@ -1,33 +1,6 @@
 # ada-azure-terraform-project
 Projeto ADA - Iac - Terraform
 
-Olá!  Sou de Belo Horizonte, estou trabalhando em São Paulo sem computador ainda. Amanhã vou à casa de uma colega para usar o computador. 
-Obrigada.
-
-Roteiro:
-
-AKS
-
-Key vault
-
-Database
-
-managed identity
-
-kubernetes service account
-
-managed identity -> federacao com k8s service account
-
-configurar storage account no pod
-
-adicionar annotation na service account
-
-Add Permissao de Admin AKS
-
-configurar o label do pod para user workload identity
-
-Add Permissao no Key vault para adiconar a secret
-
-managed identity -> Permissao pra ler a secret
-
-configurar o firewall no banco de dados -> aks subnet
+Meu arquivo main.tf ainda está muito incompleto. Estou fazendo pelo celular. 
+Professor, peço desculpas se parece enrolação. Eu mudei de hotel e mesmo assim não consegui acessar a internet pelo meu notebook hoje. 
+Me comprometo a continuar melhorando o projeto nos próximos dias. Foi uma cojunção de fatores (viagem e trabalho em outro polo mais distante para me reunir com minha coordenadora e despedir da orientadora).
