@@ -39,6 +39,10 @@ identity {
 type = "SystemAssigned"
 }
 
+
+
+
+/*
 tags = {
 Environment = "Production"
 }
@@ -47,6 +51,9 @@ output "kube_config" {
 value = azurerm_kubernetes_cluster.example.kube_config_raw
 sensitive = true
 }
+/*
+
+
 
 /*
 # Create a virtual network within the resource group
