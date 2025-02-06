@@ -42,4 +42,35 @@ type = "SystemAssigned"
 tags = {
 Environment = "Production"
 }
+
+output "kube_config" {
+value = azurerm_kubernetes_cluster.example.kube_config_raw
+sensitive = true
 }
+
+*/
+# Create a virtual network within the resource group
+resource "azurerm_virtual_network" "example" {
+  name                = "vnet-spd8-dev-brs-001"
+  resource_group_name = azurerm_resource_group.example.name
+  location            = azurerm_resource_group.example.location
+  address_space       = ["${var.virtual_network}"]
+}
+
+resource "azurerm_virtual_network" "virtual_network" {
+  name                = "vnet-spd"
+  location            = azurerm_resource_group.projeto_rg.location
+  resource_group_name = azurerm_resource_group.projeto_rg.name
+  address_space       = ["${var.virtual_network}"]
+}
+
+resource "azurerm_subnet" "cluster_resources" {
+  name                 = "cluster-resources"
+  virtual_network_name = azurerm_virtual_network.virtual_network.name
+  resource_group_name  = azurerm_resource_group.environment_rg.name
+  address_prefixes     = ["${var.subnet_network}"]
+
+  depends_on = [ azurerm_virtual_network.virtual_network ]
+}
+
+*/
