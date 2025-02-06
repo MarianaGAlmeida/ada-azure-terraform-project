@@ -48,7 +48,7 @@ value = azurerm_kubernetes_cluster.example.kube_config_raw
 sensitive = true
 }
 
-*/
+/*
 # Create a virtual network within the resource group
 resource "azurerm_virtual_network" "example" {
   name                = "vnet-spd8-dev-brs-001"
@@ -73,4 +73,4 @@ resource "azurerm_subnet" "cluster_resources" {
   depends_on = [ azurerm_virtual_network.virtual_network ]
 }
 
-*/
+/*
