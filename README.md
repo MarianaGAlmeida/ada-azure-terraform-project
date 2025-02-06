@@ -6,3 +6,7 @@ Professor, peço desculpas se parece enrolação. Eu mudei de hotel e mesmo assi
 Me comprometo a continuar melhorando o projeto amanhã e nos próximos dias. Foi uma cojunção de fatores (viagem e trabalho em outro polo mais distante para me reunir com minha coordenadora e despedir da orientadora).
 
 No momento, vou adicionar uma ilustração apenas para indicar que estou entendendo a infraestrutra demandada:
+![image](https://github.com/user-attachments/assets/4c6349e8-a69e-40e5-ab58-7716c92ee498)
+
+
+
